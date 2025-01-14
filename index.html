@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: hsl(212, 45%, 89%);
+      font-size: 15px;
+      font-weight: 700;
+      font-family: Outfit;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .wrapper{
+      display: flex;
+      flex-flow: wrap column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      margin: auto;
+      padding: 8px;
+      width: 25%;
+    }
+
+    .container{
+      width: auto;
+      border-radius: 8px;
+      background-color: hsl(0, 0%, 100%);
+      padding: 8px;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .text-container h1, p {
+      text-align: center;
+      padding: 12px 18px;
+    }
+
+    .text-container h1::first-letter {
+      text-transform: capitalize;
+    }
+
+    @media only screen and (max-width: 375px) {
+      body {
+        /* background-color: red; */
+      }
+
+      .wrapper{
+        flex-flow: column wrap;
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  Improve your front-end skills by building projects
+
+  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="image-container">
+        <img src="images/image-qr-code.png" alt="" class="qr-core">
+      </div>
+      <div class="text-container">
+        <h1 class="heading-text">improve your front-end skilss by building projects</h1>
+        <p class="text-caption">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel Samson Sompien</a>.
+  </div>
+</body>
+</html>
